@@ -1,31 +1,19 @@
-# 🍽️ Meal Splitter
+# 🍽️ RM MANAGER
 
-A simple, web-based meal and payment tracking system for restaurants, cafes, or events. Built in HTML, CSS, and JavaScript — no backend required. Designed with dark mode, staff sign-in, tipping, receipt printing, and session-based analytics.
+A modern, web-based restaurant management tool for tracking orders, payments, staff sessions, and earnings — all in your browser. No backend required.
 
 ---
 
 ## 🚀 Features
 
-- 🔐 **Staff Login & Admin Creation**
-- 🧾 **Create & Manage Tables**
-- 🍔 **Add Food & Drinks with Comments**
-- 💸 **Tips, Discounts & Payment Methods**
-- 🖨️ **Clean Receipt Printing**
-- 📊 **Track Staff Earnings and Company Totals**
-- 💼 **Earnings Archive per Session (Time, Date, Staff)**
+- 🔐 **Secure Staff Login & Admin Account Setup**
+- 🧾 **Create & Manage Multiple Tables**
+- 🍔 **Add Food & Drinks (with Comments like “No Ice”)**
+- 💸 **Payment Options: Cash / Card / Student Discount / Gift Card**
+- 💰 **Tips, Discounts, and Session Tracking**
+- 🖨️ **Print-Ready Receipts (Only the Receipt, Not the Page)**
+- 🧑‍💼 **Staff Earnings + Company Analytics (Date, Time, User)**
+- 🗃️ **Archived Sessions + Deletable Logs**
+- 🌙 **Dark Mode with Clean, White Headings**
 
 ---
-
-## 🖼️ Interface Preview
-
-> Dark mode design with clean UI, easy navigation, and modern font styles.
-
----
-
-## 🛠️ How to Use
-
-1. **Clone the Repository:**
-
-   ```bash
-   git clone https://github.com/your-username/meal-splitter.git
-   cd meal-splitter
