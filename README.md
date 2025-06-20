@@ -2,6 +2,9 @@
 
 A modern, web-based restaurant management tool for tracking orders, payments, staff sessions, and earnings — all in your browser. No backend required.
 
+# DEAFULT LOGIN: 
+# USERNAME: "admin"
+# PASSWORD: "admin123"
 ---
 
 ## 🚀 Features
