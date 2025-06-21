@@ -1,5 +1,4 @@
 
-// Your full JavaScript logic should be here
 function staffLogin() {
   alert('Login button clicked. (Implement logic in script.js)');
 }
