@@ -1,80 +1,92 @@
 body {
-  font-family: Segoe UI, sans-serif;
-  background: #121212;
-  color: #e0e0e0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
+  color: #fff;
   margin: 0;
   padding: 0;
+  min-height: 100vh;
+  background-attachment: fixed;
 }
 
 .container {
   max-width: 720px;
   margin: 40px auto;
-  background: #1e1e1e;
+  background: rgba(255, 255, 255, 0.05);
   padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.8);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 h1, h3 {
   color: #ffffff;
+  margin-top: 0;
 }
 
 input, select {
   width: 100%;
-  padding: 8px;
-  margin: 8px 0 16px;
-  border: 1px solid #444;
-  border-radius: 6px;
-  background: #2b2b2b;
-  color: #e0e0e0;
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
   font-size: 14px;
-  font-family: inherit;
+  backdrop-filter: blur(4px);
 }
 
 input::placeholder {
-  color: #888;
+  color: #ccc;
 }
 
-/* LOGIN PAGE INPUTS – shorter & left aligned */
-#loginPage input {
+#loginPage input,
+#loginPage button {
   max-width: 300px;
-  width: 100%;
+}
+
+#loginPage input {
   display: block;
   margin-bottom: 12px;
 }
 
 #loginPage button {
-  max-width: 300px;
   display: block;
   margin-bottom: 16px;
 }
 
 button {
-  background-color: #90caf9;
-  color: #121212;
-  border: none;
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.25);
   padding: 10px 16px;
-  border-radius: 6px;
+  border-radius: 8px;
   cursor: pointer;
-  font-family: inherit;
   font-size: 14px;
+  transition: background-color 0.2s;
 }
+
 button:hover {
-  background-color: #64b5f6;
+  background-color: rgba(255, 255, 255, 0.25);
 }
+
 button.delete {
-  background-color: #c94e4e;
-  color: #fff;
+  background-color: rgba(255, 75, 75, 0.2);
+  border-color: rgba(255, 75, 75, 0.4);
 }
+
 button.delete:hover {
-  background-color: #a63f3f;
+  background-color: rgba(255, 75, 75, 0.35);
 }
+
 button.cashout {
-  background-color: #4a90e2;
-  color: #fff;
+  background-color: rgba(0, 123, 255, 0.2);
+  border-color: rgba(0, 123, 255, 0.4);
 }
+
 button.cashout:hover {
-  background-color: #357abd;
+  background-color: rgba(0, 123, 255, 0.35);
 }
 
 .hidden {
@@ -82,31 +94,32 @@ button.cashout:hover {
 }
 
 .list-item {
-  background-color: #2a2a2a;
-  border-radius: 8px;
-  padding: 10px;
-  margin-bottom: 8px;
+  background: rgba(255, 255, 255, 0.07);
+  border-radius: 10px;
+  padding: 12px;
+  margin-bottom: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #e0e0e0;
+  color: #fff;
 }
 
 #receiptContainer {
-  background: #262626;
+  background: rgba(0, 0, 0, 0.3);
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 12px;
   margin-top: 20px;
   font-family: monospace;
   white-space: pre-wrap;
-  color: #e0e0e0;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 footer {
   margin-top: 20px;
   font-size: 12px;
   text-align: center;
-  color: #555;
+  color: #ccc;
 }
 
 @media print {
