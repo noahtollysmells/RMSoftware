@@ -8,16 +8,27 @@ A modern, web-based restaurant management tool for tracking orders, payments, st
 # PASSWORD: "admin123"
 ---
 
-## 🚀 Features
+# 🚀 Features
+🔐 Staff Login & Admin Creation — Secure login and the ability to add new admin users.
 
-- 🔐 **Secure Staff Login & Admin Account Setup**
-- 🧾 **Create & Manage Multiple Tables**
-- 🍔 **Add Food & Drinks (with Comments like “No Ice”)**
-- 💸 **Payment Options: Cash / Card / Student Discount / Gift Card**
-- 💰 **Tips, Discounts, and Session Tracking**
-- 🖨️ **Print-Ready Receipts (Only the Receipt, Not the Page)**
-- 🧑‍💼 **Staff Earnings + Company Analytics (Date, Time, User)**
-- 🗃️ **Archived Sessions + Deletable Logs**
-- 🌙 **Dark Mode with Clean, White Headings**
+🍽️ Table Management — Open, track, and manage tables with customer names.
+
+🧾 Itemized Orders — Add meals, drinks, comments, and view full receipts.
+
+💳 Discount Options — Supports student discounts and gift card deductions.
+
+💰 Tips & Payments — Add tips, select payment methods (cash/card), and track everything.
+
+📄 Printable Receipts — View and print receipts with a clean layout.
+
+📊 Session Earnings — Staff can clock out and see what they earned.
+
+🏢 Company Analytics — View session history with who earned what and when.
+
+♻️ Persistent Storage — Data saved locally in the browser (via localStorage).
+
+🎨 Modern UI — Sleek glassmorphism design with neat alignment and improved spacing.
+
+
 
 ---
