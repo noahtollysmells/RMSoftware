@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Meal Splitter</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Login Screen -->
+  <div class="container" id="loginPage">
+    <h1>Staff Login / Admin Setup</h1>
+    <input id="usernameInput" placeholder="Username" />
+    <input id="passwordInput" type="password" placeholder="Password" />
+    <button onclick="staffLogin()">Login</button>
+    <h3>Or create new admin:</h3>
+    <input id="newAdminUser" placeholder="New Admin Username" />
+    <input id="newAdminPass" type="password" placeholder="New Admin Password" />
+    <button onclick="createAdmin()">Create Admin</button>
+    <p id="loginError" style="color:red;display:none;"></p>
+  </div>
+
+  <!-- Table List Screen -->
+  <div class="container hidden" id="tableListPage">
+    <h1>Tables · Logged in: <span id="staffNameDisplay"></span></h1>
+    <div id="tablesContainer"></div>
+    <button onclick="showAddTable()">+ Add Table</button>
+    <button class="secondary" onclick="clockOut()">Clock Out</button>
+    <button class="secondary" onclick="logout()">Logout</button>
+
+    <hr />
+    <h3>Archived Tables (this session)</h3>
+    <div id="archiveContainer"></div>
+
+    <hr />
+    <h3>Your Earnings</h3>
+    <div id="earningsList"></div>
+
+    <hr />
+    <h3>Company Sessions</h3>
+    <div id="analyticsContainer"></div>
+  </div>
+
+  <!-- Add Table Screen -->
+  <div class="container hidden" id="addTablePage">
+    <h1>Add Table</h1>
+    <input id="newTableNumber" placeholder="Table Number" />
+    <input id="newTableName" placeholder="Customer Name" />
+    <button onclick="addTable()">Save</button>
+    <button class="secondary" onclick="goToTableList()">Back</button>
+  </div>
+
+  <!-- Orders Screen -->
+  <div class="container hidden" id="ordersPage">
+    <h1 id="ordersTableTitle"></h1>
+    <select id="itemCategory"><option>Meal</option><option>Drink</option></select>
+    <input id="itemName" placeholder="Item Name" />
+    <input id="itemPrice" type="number" step="0.01" placeholder="Price (£)" />
+    <input id="itemComment" placeholder="Comments (optional)" />
+    <button onclick="addOrder()">Add Item</button>
+    <hr />
+    <input id="tipAmount" type="number" step="0.01" placeholder="Tip (£)" />
+    <select id="paymentMethod"><option value="">Select Payment</option><option>Cash</option><option>Card</option></select>
+    <select id="discountType" onchange="toggleGift()"><option value="none">No Discount</option><option value="student">Student 25%</option><option value="giftcard">Gift Card</option></select>
+    <input id="giftAmount" type="number" step="0.01" placeholder="Gift Card Amount (£)" class="hidden" />
+    <hr />
+    <button onclick="viewReceipt()">View Receipt</button>
+    <button class="cashout" onclick="cashOut()">Cash Out</button>
+    <button class="delete" onclick="deleteTable()">Delete Table</button>
+    <button class="secondary" onclick="goToTableList()">Back</button>
+
+    <div id="receiptContainer" class="hidden"></div>
+    <button id="printBtn" class="hidden" onclick="window.print()">Print Receipt</button>
+  </div>
+
+  <footer>Meal Splitter version 2.0.0</footer>
+  <script src="script.js"></script>
+</body>
+</html>
