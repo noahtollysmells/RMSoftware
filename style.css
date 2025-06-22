@@ -34,8 +34,10 @@ input::placeholder {
 #loginPage input {
   max-width: 300px;
   width: 100%;
-  display: inline-block;
+  margin: 0;
+  display: block;
 }
+
 button {
   background-color: #90caf9;
   color: #121212;
