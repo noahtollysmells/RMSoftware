@@ -1,4 +1,3 @@
-
 body {
   font-family: Segoe UI, sans-serif;
   background: #121212;
@@ -6,6 +5,7 @@ body {
   margin: 0;
   padding: 0;
 }
+
 .container {
   max-width: 720px;
   margin: 40px auto;
@@ -14,9 +14,11 @@ body {
   border-radius: 12px;
   box-shadow: 0 6px 15px rgba(0,0,0,0.8);
 }
+
 h1, h3 {
   color: #ffffff;
 }
+
 input, select {
   width: 100%;
   padding: 8px;
@@ -28,22 +30,24 @@ input, select {
   font-size: 14px;
   font-family: inherit;
 }
+
 input::placeholder {
   color: #888;
 }
+
+/* LOGIN PAGE INPUTS – shorter & left aligned */
 #loginPage input {
   max-width: 300px;
   width: 100%;
-  margin: 0;
   display: block;
-}
-#loginPage button {
-  margin-bottom: 16px;
-}
-#loginPage input {
   margin-bottom: 12px;
 }
 
+#loginPage button {
+  max-width: 300px;
+  display: block;
+  margin-bottom: 16px;
+}
 
 button {
   background-color: #90caf9;
@@ -72,7 +76,11 @@ button.cashout {
 button.cashout:hover {
   background-color: #357abd;
 }
-.hidden { display: none; }
+
+.hidden {
+  display: none;
+}
+
 .list-item {
   background-color: #2a2a2a;
   border-radius: 8px;
@@ -83,6 +91,7 @@ button.cashout:hover {
   align-items: center;
   color: #e0e0e0;
 }
+
 #receiptContainer {
   background: #262626;
   padding: 20px;
@@ -92,14 +101,25 @@ button.cashout:hover {
   white-space: pre-wrap;
   color: #e0e0e0;
 }
+
 footer {
   margin-top: 20px;
   font-size: 12px;
   text-align: center;
   color: #555;
 }
+
 @media print {
-  body * { visibility: hidden; }
-  #receiptContainer, #receiptContainer * { visibility: visible; }
-  #receiptContainer { position: absolute; top: 0; left: 0; width: 100%; }
+  body * {
+    visibility: hidden;
+  }
+  #receiptContainer, #receiptContainer * {
+    visibility: visible;
+  }
+  #receiptContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
 }
