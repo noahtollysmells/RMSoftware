@@ -24,16 +24,21 @@ function showPage(id) {
 }
 
 function staffLogin(reload = false) {
-  const u = document.getElementById('usernameInput').value.trim();
-  const p = document.getElementById('passwordInput').value;
   const err = document.getElementById('loginError');
   if (!reload) {
+    const u = document.getElementById('usernameInput').value.trim();
+    const p = document.getElementById('passwordInput').value;
     if (!staffUsers[u] || staffUsers[u].password !== p) {
       err.innerText = 'Invalid credentials';
       err.style.display = 'block';
       return;
     }
     loggedInUser = u;
+  } else {
+    if (!loggedInUser) {
+      showPage('loginPage');
+      return;
+    }
   }
   err.style.display = 'none';
   document.getElementById('staffNameDisplay').innerText = loggedInUser;
