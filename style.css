@@ -40,6 +40,10 @@ input::placeholder {
 #loginPage button {
   margin-bottom: 16px;
 }
+#loginPage input {
+  margin-bottom: 12px;
+}
+
 
 button {
   background-color: #90caf9;
