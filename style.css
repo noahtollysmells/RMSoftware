@@ -31,6 +31,13 @@ input, select {
 input::placeholder {
   color: #888;
 }
+#loginPage input {
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
 button {
   background-color: #90caf9;
   color: #121212;
